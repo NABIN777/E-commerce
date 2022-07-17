@@ -293,3 +293,55 @@ input {
 	width: 40px;
 }
 
+/* for signup */
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.sign-up-container {
+	left: 50%;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.Soverlay-container {
+	position: absolute;
+	top: 0;
+	right: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.Soverlay {
+	background: #000000;
+	background: -webkit-linear-gradient(to right, #180d0c, #1c1b1b);
+	background: linear-gradient(to right, #0e0d0c, #030303);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #000000;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.Soverlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.Soverlay-right {
+	right: 0;
+}
