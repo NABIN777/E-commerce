@@ -17,5 +17,10 @@ class ViewsTest(TestCase):
     def test_delete_clothe(self):
         self.client=Client()
         response= self.client.get(reverse('clothes:delete_clothe', args=[2]))
-        self.assertEqual(response.status_code, 200)    
+        self.assertEqual(response.status_code, 200)  
+        
+    def test_add_clothe(self):
+        self.client=Client()
+        response= self.client.get(reverse('clothes:add_clothe'))
+        self.assertEqual(response.status_code, 200)      
 
